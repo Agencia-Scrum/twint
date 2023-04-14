@@ -175,10 +175,13 @@ async def RandomUserAgent(wa=None):
     logme.debug(__name__ + ':RandomUserAgent')
     try:
         if wa:
-            return "Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36"
-        return UserAgent(verify_ssl=False, use_cache_server=False).random
+#            return "Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36"
+            return "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+        #return UserAgent(verify_ssl=False, use_cache_server=False).random
+        return "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
     except:
-        return random.choice(user_agent_list)
+        #return random.choice(user_agent_list)
+        return "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 
 
 async def Username(_id, bearer_token, guest_token):

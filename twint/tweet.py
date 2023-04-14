@@ -128,6 +128,7 @@ def Tweet(tw, config):
     t.replies_count = tw['reply_count']
     t.retweets_count = tw['retweet_count']
     t.likes_count = tw['favorite_count']
+    t.impressions_count = tw['ext_views']['count']
     t.link = f"https://twitter.com/{t.username}/status/{t.id}"
     try:
         if 'user_rt_id' in tw['retweet_data']:
