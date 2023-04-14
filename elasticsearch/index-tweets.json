@@ -6,7 +6,7 @@ PUT twinttweets
           "id": {"type": "long"},
           "conversation_id": {"type": "long"},
           "created_at": {"type": "long"},
-          "date": {"type": "date", "format": "yyyy-MM-dd HH:mm:ss"},
+          "date": {"type": "date", "format": "yyyy-MM-dd HH:mm:ss Z"},
           "timezone": {"type": "keyword"},
           "place": {"type": "keyword"},
           "location": {"type": "keyword"},

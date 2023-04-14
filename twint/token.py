@@ -94,4 +94,8 @@ class Token:
                 self.config.Guest_token = str(match.group(1))
             else:
                 self.config.Guest_token = None
+<<<<<<< HEAD
                 raise RefreshTokenException('Could not find the Guest token in JSON')
+=======
+                raise RefreshTokenException('Could not find the Guest token in JSON')
+>>>>>>> 87a7af9fe514408a681121fbda80f44666d6fc14
