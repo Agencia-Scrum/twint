@@ -66,7 +66,7 @@ def main():
 
     # Something breaks if we don't split these up
 
-    for run in runs[:3]:
+    for run in runs[1:3]:
         if run == twint.run.Search:
             c.Since = "2012-1-1 20:30:22"
             c.Until = "2017-1-1"

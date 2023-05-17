@@ -33,6 +33,7 @@ else:
     about['__version__'] = VERSION
 
 setup(
+    py_modules=[],
     name=NAME,
     version=about['__version__'],
     description=DESCRIPTION,
